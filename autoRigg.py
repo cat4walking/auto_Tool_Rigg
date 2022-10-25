@@ -115,9 +115,9 @@ def createTacticle():
 
     for i in range(0, cmds.intField(thickNess, query = True, value = True)):
         print(i)
-    radius = i + 1
+    r = i + 1
     # global tnTacticle
-    cmds.polyCylinder(h = totalHeight, n = "Tacticle", sy = 50, radius = radius)
+    cmds.polyCylinder(h = totalHeight, n = "Tacticle", sy = 50, radius = r)
     cmds.move(0, allCount, 0, "Tacticle")
 
 #fuction bind
